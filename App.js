@@ -77,6 +77,18 @@ export default class Map extends React.Component {
               latitude: this.state.latitude,
               longitude: this.state.longitude,
             }}></Marker>
+            <Polyline
+            coordinates={this.state.coordinates}
+            strokeColor="red"
+            strokeColors={[
+              '#bf8221',
+              '#ffe066',
+              '#ffe066',
+              '#ffe066',
+              '#ffe066',
+            ]}
+            strokeWidth={3}
+          />
           
         </MapView>
       </View>
